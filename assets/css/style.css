@@ -139,6 +139,12 @@ h6 {
   color: #fff;
 }
 
+@media (min-width:300px) and (max-width:700px) {
+#topbar .contact-info i {
+font-size: 10px;
+}
+}
+
 #topbar .contact-info i a,
 #topbar .contact-info i span {
   padding-left: 5px;
@@ -157,6 +163,7 @@ h6 {
 }
 
 #topbar .social-links a {
+  z-index: 1;
   color: rgba(255, 255, 255, 0.7);
   line-height: 0;
   transition: 0.3s;
@@ -173,7 +180,6 @@ h6 {
 #header {
   background: #fff;
   transition: all 0.5s;
-  z-index:  1;
   height: 86px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
@@ -184,7 +190,7 @@ h6 {
 
 #header .logo {
   font-size: 30px;
-  margin: 0;
+  margin: 10%;
   padding: 0;
   line-height: 1;
   font-weight: 600;
@@ -201,8 +207,25 @@ h6 {
   color: #106eea;
 }
 
-#header .logo img {
+#header .title {
+  font-size: 30px;
+  margin: 10%;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .title img {
   max-height: 40px;
+}
+
+
+@media (min-width: 700px) and (max-width:1100px) {
+  #header .logo{
+    visibility: hidden;
+  }
 }
 
 .scrolled-offset {
@@ -566,8 +589,8 @@ h6 {
   }
 
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 27px;
+    line-height: 30px;
   }
 
   #hero h2 {
@@ -761,7 +784,6 @@ section {
   line-height: 28px;
   margin-bottom: 0;
   padding-left: 10%;
-  padding-right: 10%;
   color: #111;
 }
 
@@ -779,8 +801,13 @@ section {
   color: #fff;
 }
 
+.featured-services .description a {
+  font-size: 10px;
+}
+
 .featured-services  .ratings{
   margin-right:10px;
+  margin-bottom: 5%;
 }
 
 .featured-services  .ratings i{

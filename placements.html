@@ -37,18 +37,38 @@
 
 <body>
 
+  <style>
+.featured-services .icon-box {
+  width: 18rem;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.featured-services .icon-box img{
+  padding: 30px 30px 10px 30px;
+}
+
+.featured-services .description{
+  margin-bottom: 5%;
+}
+
+    </style>
+
   <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
+  <section id="topbar" class="d-flex align-items-left">
+    <div class="container d-flex justify-content-left justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@bytebrainstech.com">contact@bytebrainstech.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 9175107523</span></i>
+        <i class="bi bi-phone align-items-center ms-3"><span>+91 9175107523</span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="telegram"><i class="bi bi-telegram"></i></a>
+        <a href="https://t.me/HandsOnJavaExperience" class="telegram"><i class="bi bi-telegram"></i></a>
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="https://chat.whatsapp.com/GIBzTqNONfmEG1JK6rhMUj" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/company/bytebrains-technology/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
     </div>
   </section>
@@ -57,19 +77,19 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>
-      <h1 class="logo title"><a href="index.html">ByteBrains Technology</a></h1>
+      <a href="index.html" class="title d-sm-none"><img src="assets/img/logo.png" alt=""></a>
+      <h1 class="logo d-none d-sm-block d-md-block d-lg-block"><a href="index.html">ByteBrains Technology</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Placements</a></li>
+          <li><a class="nav-link scrollto" href="about-us.html">About</a></li>
+          <li><a class="nav-link scrollto " href="placements.html">Placements</a></li>
           <li class="dropdown"><a href="#"><span>Courses</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Java Training</a></li>
-              <li><a href="#">Spring Framework</a></li>
+              <li><a href="java-training.html">Java Training</a></li>
+              <li><a href="spring-framwork.html">Spring Framework</a></li>
               <li><a href="#">Spring Boot & Microservices</a></li>
               <li><a href="#">Angular Development</a></li>
               <li><a href="#">Java FullStack Development</a></li>
@@ -90,10 +110,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>About Us</h2>
+          <h2>Placements</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>About Us</li>
+            <li>Placements</li>
           </ol>
         </div>
 
@@ -101,61 +121,60 @@
     </section><!-- End Breadcrumbs -->
 
     <section class="inner-page">
-      <div class="container">
-        <p class="fs-1 text-lg-center">
-         Who We are ?
-        </p>
-        <p>ByteBrains Technology is a Indian IT training institute preparing tech-aspirants for flourishing careers in this challenging and competitive domain since 2020. We offer flexible online training options that allow our students to study conveniently and progress on their preferred pace. Teaching at Ashok IT is supported by years of extensive academic and industry experience, innovative teaching methodologies, and high-quality educational resources.</p>
-      </div>
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container " data-aos="fade-up">
 
-      <div class="container">
-        <p class="fs-1 text-lg-center">
-          Our Mission & Vision
-        </p>
-        <p>Training at ByteBrains Technology is tailored and regularly updated to match the ever-growing needs of the robust and cut-throat IT domain. Our Mission is to educate and train our students to be able to effectively assume top responsibilities and handle senior administrative roles in tech-driven MNCs around the world. Our vision is to make high-quality IT-training services easily available, accessible, and affordable to the promising talent of our country.</p>
-      </div>
+        <p class="fs-1 text-lg-center" style="padding-bottom: 5%;">
+          Our Placements
+         </p>
 
-      <section id="pricing" class="pricing ">
-        <div class="container" data-aos="fade-up">
-    
-          <div class="row">
-  
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="box featured">
-                <h3>Mission</h3>
-                  <p>Our mission is to allow the aspiring talent of our country to be able to utilize their potential and lead impactful careers in the exciting and stimulating domain of Information Technology.</p>
-              </div>
+        <div class="row">
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon card-img-top"><img src="assets/img/Placements/Placement1.jpg" class="img-fluid" alt=""></div>
+              <h4 class="title text-center"><a href="">Prakhar</a></h4>
+              <p class="description"><strong>Company Name: </strong> Go Digit </p>
+              <p class="description text-center"><strong>Package: </strong> 7 LPA </p>
             </div>
-  
-            <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-              <div class="box featured">
-                <h3>Goal</h3>
-                <p>Our goal is to produce learned, qualified, and skilled IT experts with top-class technical skills and reliable managerial abilities able to drive business growth and lead organizations to success.</p>
-              </div>
-            </div>  
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box featured">
-              <h3>Vision</h3>
-              <p>We work to provide the budding tech-aspirants of our nation with a useful, inexpensive learning platform where they can benefit from the deep IT-domain expertise and extensive industry experience of our proficient tutors.</p>
-            </div>
-          </div>  
-
-        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="box featured">
-            <h3>Values</h3>
-            <ul>
-              <li><h5>Trust</h5></li>
-              <li><h5>Integrity</h5></li>
-              <li><h5>Excellence</h5></li>
-              <li><h5>Teamwork</h5></li>
-              <li><h5>Commitment</h5></li>
-            </ul>
           </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon card-img-top"><img src="assets/img/Placements/Placement2.jpg" class="img-fluid" alt=""></div>
+              <h4 class="title text-center"><a href="">Ajay</a></h4>
+              <p class="description"><strong>Company Name: </strong> Accenture </p>
+              <p class="description text-center"><strong>Package: </strong> 5 LPA </p>
+              
+          </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon card-img-top"><img src="assets/img/Placements/Placement3.jpg" class="img-fluid" alt=""></div>
+              <h4 class="title text-center"><a href="">Abhinav</a></h4>
+              <p class="description"><strong>Company Name: </strong> Cognizant </p>
+              <p class="description text-center"><strong>Package: </strong> 10 LPA </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon card-img-top"><img src="assets/img/Placements/Placement4.jpg" class="img-fluid" alt=""></div>
+              <h4 class="title text-center"><a href="">Akshay</a></h4>
+              <p class="description"><strong>Company Name: </strong> Infosys </p>
+              <p class="description text-center"><strong>Package: </strong> 4 LPA </p>
+
+            </div>
+
+            </div>
+          </div>
+
         </div>
-  
-        </div>
-      </section><!-- End Pricing Section -->
+
+      </div>
+    </section><!-- End Featured Services Section -->
     </section>
 
   </main><!-- End #main -->
@@ -233,89 +252,89 @@
 </section><!-- End Contact Section -->
 
 
- <!-- ======= Footer ======= -->
- <footer id="footer">
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
 
-  <div class="footer-newsletter" style="display:none">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <h4>Join Our Newsletter</h4>
-          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-          <form action="" method="post">
-            <input type="email" name="email"><input type="submit" value="Subscribe">
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6 footer-contact">
-          <h3>ByteBrains Technology</span></h3>
-          <p>
-            Pancard club road<br>
-            Baner, Pune 411045<br>
-            Maharashtra <br><br>
-            <strong>Phone:</strong> +91-9175107523<br>
-            <strong>Email:</strong> info@bytebrainstech.com<br>
-          </p>
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Placements</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Our Courses</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Java Training</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Spring Framework</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Spring Boot & Microservices</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Java Fullstack Development</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">AWS cloud Developer</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Our Social Networks</h4>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-          <div class="social-links mt-3">
-            <a href="#" class="telegram"><i class="bx bxl-telegram"></i></a>
-            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-            <a href="#" class="google-plus"><i class="bx bxl-youtube"></i></a>
-            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    <div class="footer-newsletter" style="display:none">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
           </div>
         </div>
-
       </div>
     </div>
-  </div>
 
-  <div class="container py-4">
-    <div class="copyright">
-      &copy; Copyright <strong><span>ByteBrains Technology 2022</span></strong>. All Rights Reserved
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>ByteBrains Technology</span></h3>
+            <p>
+              Pancard club road<br>
+              Baner, Pune 411045<br>
+              Maharashtra <br><br>
+              <strong>Phone:</strong> +91-9175107523<br>
+              <strong>Email:</strong> info@bytebrainstech.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about-us.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="placements.html">Placements</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#faq">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#faq">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Courses</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="java-training.html">Java Training</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="spring-framwork.html">Spring Framework</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Spring Boot & Microservices</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Java Fullstack Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">AWS cloud Developer</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <div class="social-links mt-3">
+              <a href="https://t.me/HandsOnJavaExperience" class="telegram"><i class="bi bi-telegram"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://chat.whatsapp.com/GIBzTqNONfmEG1JK6rhMUj" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://www.linkedin.com/company/bytebrains-technology/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>      
+              <a href="https://www.youtube.com/channel/UCYmERdBS8jpzrO8X4vH3osA" class="google-plus"><i class="bx bxl-youtube"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
-      Designed by <a href="https://bootstrapmade.com/">ByteBrains Technology</a>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>ByteBrains Tech. 2022</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
+        Designed by <a href="#">ByteBrains Technology</a>
+      </div>
     </div>
-  </div>
-</footer><!-- End Footer -->
+  </footer><!-- End Footer -->
 
 <div id="preloader"></div>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
